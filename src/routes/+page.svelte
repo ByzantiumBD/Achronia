@@ -2,6 +2,7 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import { Alert } from 'flowbite-svelte'
 </script>
 
 <svelte:head>
@@ -24,7 +25,12 @@
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
-
+	
+	<div class="p-8">
+		<Alert>
+			<span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
+		</Alert>
+	</div>
 	<Counter />
 </section>
 
