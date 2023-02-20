@@ -5,12 +5,14 @@
 	import './styles.css';
 </script>
 
-<div class="app">
-	<Header />
+<div class="app display flex bg-black items-center flex-col"> <!-- Base -->
+	<div class="flex flex-col items-center bg-white md:!w-[768px]  xl:!w-[1024px]"> <!--White space-->
+		<Header />
 
-	<main>
-		<slot />
-	</main>
+		<main>
+			<slot />
+		</main>
 
-	<Footer />
+		<Footer />
+	</div>
 </div>
