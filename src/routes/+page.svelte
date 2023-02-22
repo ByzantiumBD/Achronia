@@ -10,7 +10,7 @@
 
 <section class="flex flex-col items-center">
 	<div>
-		<h1 class="flex justify-center p-5 text-xl">What is Achronia?</h1>
+		<h1 class="flex justify-center p-10 text-2xl text-blue-4">What is Achronia?</h1>
 		<p class="text-base mx-20 text-center">
 			Achronia is a fun monster-catching videogame 
 			with retro style and an open-world map. It has a 
@@ -18,9 +18,9 @@
 			tame Achronians, and a multiplayer one, where you'll
 			play agains other explorers to see who's the best!
 		</p>
-		<div class="text-center text-lg mt-10 mb-20">Are you ready to start your adventure?</div>
+		<div class="text-center text-lg mt-10 mb-20 text-pink-2">Are you ready to start your adventure?</div>
 
-		<h1 class="flex justify-center p-5 text-xl">News</h1>
+		<h1 class="flex justify-center p-10 text-2xl text-blue-4">- News -</h1>
 	</div>
 
 	<div class="flex w-3/4 justify-center">

@@ -11,3 +11,15 @@
 :root {
 	font-family: Pixel;
 }
+
+li > a:hover {
+    color: #1b1b1b;
+    text-decoration: none !important;
+    transform: translateY(-5px);
+}
+
+li > a:not(:hover) img {
+    visibility: hidden;
+    transform: translateY(5px);
+}
+
