@@ -2,6 +2,25 @@
 	import title from "$lib/img/achronia_logo.png"
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
+	import { onMount } from 'svelte';
+
+	enum status {
+		normal = "pixelbuttonstd",
+		hover = "pixelbuttonhover",
+		focus = "pixelbuttonactive"
+	}
+	let buttonStatus = status.normal
+	function makeHover() { buttonStatus = status.hover }
+	function makeFocus() { buttonStatus = status.focus; setTimeout(makeNormal, 300) }
+	function makeNormal() { buttonStatus = status.normal }
+
+	onMount(async () => {
+		makeHover();
+		setTimeout(()=>{
+			buttonStatus = status.focus; 
+			setTimeout(makeNormal, 1);
+		}, 1)
+	});
 </script>
 
 <div class="m-auto">
@@ -16,11 +35,12 @@
 	<div class="pixelbox w-full list-none justify-between flex flex-col md:flex-row mx-auto gap-x-8">
 		<div class="flex md:order-2 w-full md:w-auto justify-between">
 			<NavHamburger on:click={toggle} />
-			<div class="pixelbutton mr-4 px-3">
+			<button on:mouseenter={makeHover} on:mouseleave={makeNormal} on:focus={makeHover} on:mousedown={makeFocus} on:click={makeFocus}
+				class="pixelbutton {buttonStatus} mr-4 px-3">
 				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="/game">
 					Play!
 				</Button>
-			</div>
+			</button>
 		</div>
 		<NavUl {hidden} class="order-1 ">
 			<NavLi class="hover:underline text-base" 
@@ -61,14 +81,16 @@
 		border-width: 15px;
 	}
 	.pixelbutton {
-		border-image: url('/border_button.png') 36 fill;
 		border-width: 15px;
 		cursor: pointer;
 	}
-	.pixelbutton:hover{
+	.pixelbuttonstd{
+		border-image: url('/border_button.png') 36 fill;
+	}
+	.pixelbuttonhover{
 		border-image: url('/border_button_hover.png') 36 fill;
 	}
-	.pixelbutton:active{
+	.pixelbuttonactive{
 		border-image: url('/border_button_focus.png') 36 fill;
 	}
 </style>

@@ -5,7 +5,7 @@
 	import './styles.css';
 </script>
 
-<div class="app display flex bg-game bg-center
+<div class="app display flex bg-game bg-top
 	bg-cover bg-fixed items-center flex-col text-myblack"> <!-- Base -->
 	<div class="flex flex-col items-center
 		md:!w-[768px] xl:!w-[1024px]"> <!--Column-->
