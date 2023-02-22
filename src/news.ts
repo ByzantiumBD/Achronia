@@ -1,5 +1,5 @@
 import innolab from "$lib/img/inno.png"
-import achr from "$lib/img/achronians.png"
+import achr from "$lib/img/slot_machine.gif"
 import launch from "$lib/img/launch.png"
 
 export default [
