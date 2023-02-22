@@ -2,7 +2,7 @@
     import { Footer, FooterCopyright, FooterIcon } from 'flowbite-svelte'
 </script>
 
-<div class="w-full">
+<div class="w-full mt-5">
     <Footer footerType="socialmedia">
         <div class="sm:flex sm:items-center sm:justify-between">
             <FooterCopyright href="/" by="Byzantium BD™" year={2022} />

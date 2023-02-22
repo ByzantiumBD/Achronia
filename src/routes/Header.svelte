@@ -11,7 +11,7 @@
 	/>
 </div>
 
-<Navbar class="p-5" let:hidden let:toggle>
+<Navbar class="p-5 bg-transparent mb-3" let:hidden let:toggle>
 	<div class="pixelbox w-full list-none justify-between flex mx-auto gap-x-8">
 		<div class="flex md:order-2">
 			<NavHamburger on:click={toggle} />
@@ -27,7 +27,7 @@
 
 <style>
 	.pixelbox {
-		border-image: url('/border_site.png') 9 fill;
-		border-width: 20px;
+		border-image: url('/border_site1.png') 36 fill;
+		border-width: 15px;
 	}
 </style>

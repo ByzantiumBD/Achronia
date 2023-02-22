@@ -47,7 +47,7 @@
         class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
         data-carousel-prev>
         <span
-          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
           {#if $$slots.previous}
             <slot name="previous" />
           {:else}
@@ -62,7 +62,7 @@
         class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
         data-carousel-next>
         <span
-          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
           {#if $$slots.next}
             <slot name="next" />
           {:else}
