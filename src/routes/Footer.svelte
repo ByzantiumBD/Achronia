@@ -28,7 +28,7 @@
                             />
                     </svg>
                 </FooterIcon>
-                <FooterIcon href="/coming"  target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900">
+                <FooterIcon href="/404"  target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900">
                     <svg
                     class="w-5 h-5"
                     aria-hidden="true"
