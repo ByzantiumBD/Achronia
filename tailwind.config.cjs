@@ -31,7 +31,7 @@ const config = {
 				myblack: "#1b1b1b"
 			},
 			backgroundImage: {
-				'game': "url('$lib/img/bg.png')",
+				'game': "url('$lib/img/map.png')",
 			}
 		},
 	},
