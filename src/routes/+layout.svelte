@@ -1,54 +1,32 @@
 <script>
 	import '../app.postcss';
 	import Header from './Header.svelte';
+	import Footer from './Footer.svelte';
 	import './styles.css';
 </script>
 
-<div class="app">
-	<header />
-
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+<div class="app display flex bg-game bg-top
+	bg-cover bg-fixed items-center flex-col text-myblack"> <!-- Base -->
+	<div class="flex flex-col items-center
+		md:!w-[768px] xl:!w-[1024px]"> <!--Column-->
+		<Header />
+		<div 
+			class="flex flex-col items-center md:!w-[768px]
+				xl:!w-[1024px] pt-5 bodybox"> <!--White space-->
+			<main class="min-h-[75vh]">
+				<slot />
+				<div class="flex justify-center pt-10">
+					<img src="/favicon.png" alt="Achronia Logo" class="px-10 mb-3 max-w-none h-none !w-36">
+				</div>
+			</main>
+			<Footer />
+		</div>
+	</div>
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	.bodybox {
+		border-image: url('/border_site1.png') 36 fill;
+		border-width: 15px;
 	}
 </style>
