@@ -22,10 +22,10 @@ const config = {
 			fallback: null,
 			precompress: true,
 			strict: true
-		  }),
-		  paths: {
-			base: dev ? '' : '/your-repo-name',
-		  }
+		}),
+		paths: {
+			base: dev? '' : '/Achronia'
+		}		
 	}
 };
 

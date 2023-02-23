@@ -1,11 +1,12 @@
 <script lang="ts">
     import { Footer, FooterCopyright, FooterIcon } from 'flowbite-svelte'
+    import { base } from '$app/paths'
 </script>
 
 <div class="w-full mt-5">
     <Footer footerType="socialmedia">
         <div class="sm:flex sm:items-center sm:justify-between">
-            <FooterCopyright href="/" by="Byzantium BD™" year={2022} />
+            <FooterCopyright href="{base}/" by="Byzantium BD™" year={2022} />
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <FooterIcon href="https://t.me/AchroniaACS"  target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900">
                     <svg
@@ -28,7 +29,7 @@
                             />
                     </svg>
                 </FooterIcon>
-                <FooterIcon href="/404"  target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900">
+                <FooterIcon href="{base}/404"  target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900">
                     <svg
                     class="w-5 h-5"
                     aria-hidden="true"

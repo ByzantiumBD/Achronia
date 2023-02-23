@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths'
 	import title from "$lib/img/achronia_logo.png"
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
@@ -37,35 +38,35 @@
 			<NavHamburger on:click={toggle} />
 			<button on:mouseenter={makeHover} on:mouseleave={makeNormal} on:focus={makeHover} on:mousedown={makeFocus} on:click={makeFocus}
 				class="pixelbutton {buttonStatus} mr-4 px-3">
-				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="/404">
+				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="{base}/404">
 					Play!
 				</Button>
 			</button>
 		</div>
 		<NavUl {hidden} class="order-1 ">
 			<NavLi class="hover:underline text-base" 
-				activeClass="" nonActiveClass="" href="/">
+				activeClass="" nonActiveClass="" href="{base}/">
 				<span class="flex items-center">
 					<img class="w-3 h-3 mr-2" src={pointer} alt="pointer">
 					Home
 				</span>
 			</NavLi>
 			<NavLi class="hover:underline text-base" 
-				activeClass="" nonActiveClass="" href="/404">
+				activeClass="" nonActiveClass="" href="{base}/404">
 				<span class="flex items-center">
 					<img class="w-3 h-3 mr-2" src={pointer} alt="pointer">
 					Notes
 				</span>
 			</NavLi>
 			<NavLi class="hover:underline text-base" 
-				activeClass="" nonActiveClass="" href="/404">
+				activeClass="" nonActiveClass="" href="{base}/404">
 				<span class="flex items-center">
 					<img class="w-3 h-3 mr-2" src={pointer} alt="pointer">
 					News
 				</span>
 			</NavLi>
 			<NavLi class="hover:underline text-base" 
-				activeClass="" nonActiveClass="" href="/404">
+				activeClass="" nonActiveClass="" href="{base}/404">
 				<span class="flex items-center">
 					<img class="w-3 h-3 mr-2" src={pointer} alt="pointer">
 					Shop

@@ -1,9 +1,14 @@
 <script>
+    import { base } from '$app/paths'
 	import '../app.postcss';
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import './styles.css';
 </script>
+
+<svelte:head>
+	<link rel="icon" href="{base}/favicon.png" />
+</svelte:head>
 
 <div class="app display flex bg-game bg-top
 	bg-cover bg-fixed items-center flex-col text-myblack"> <!-- Base -->
@@ -16,7 +21,7 @@
 			<main class="min-h-[75vh]">
 				<slot />
 				<div class="flex justify-center pt-10">
-					<img src="/favicon.png" alt="Achronia Logo" class="px-10 mb-3 max-w-none h-none !w-36">
+					<img src="{base}/favicon.png" alt="Achronia Logo" class="px-10 mb-3 max-w-none h-none !w-36">
 				</div>
 			</main>
 			<Footer />
