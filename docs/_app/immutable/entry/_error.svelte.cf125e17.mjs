@@ -1,4 +1,4 @@
-import{S as C,i as W,s as D,k as u,a as T,r as f,a1 as H,l as h,h as l,c as q,m as _,u as x,p as a,X as n,b as I,n as E}from"../chunks/index.2b050711.mjs";function M(S){let r,m,e,c,g,v,o,y,t,b,k;return{c(){r=u("meta"),m=T(),e=u("div"),c=u("h1"),g=f("Incoming!"),v=T(),o=u("p"),y=f(`The feature you've requested is not yet implemented.
+import{S as C,i as W,s as D,k as u,a as T,r as f,a2 as H,l as h,h as l,c as q,m as _,u as x,p as a,X as n,b as I,n as E}from"../chunks/index.f90fd0e2.mjs";function M(S){let r,m,e,c,g,v,o,y,t,b,k;return{c(){r=u("meta"),m=T(),e=u("div"),c=u("h1"),g=f("Incoming!"),v=T(),o=u("p"),y=f(`The feature you've requested is not yet implemented.
 		We're working on it though, get in touch on 
 		`),t=u("a"),b=f("Telegram"),k=f(" if you want to know more!"),this.h()},l(s){const i=H("svelte-1ds1qyu",document.head);r=h(i,"META",{name:!0,content:!0}),i.forEach(l),m=q(s),e=h(s,"DIV",{class:!0});var d=_(e);c=h(d,"H1",{class:!0});var w=_(c);g=x(w,"Incoming!"),w.forEach(l),v=q(d),o=h(d,"P",{class:!0});var p=_(o);y=x(p,`The feature you've requested is not yet implemented.
 		We're working on it though, get in touch on 
