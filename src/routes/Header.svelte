@@ -4,6 +4,7 @@
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
 	import { onMount } from 'svelte';
+	import { border } from './stores';
 
 	enum status {
 		normal = "pixelbuttonstd",
@@ -33,7 +34,7 @@
 </div>
 
 <Navbar class="p-5 bg-transparent mb-3" navClass="!bg-transparent px-2 sm:px-4 py-2.5 w-full" let:hidden let:toggle>
-	<div class="pixelbox w-full list-none justify-between flex flex-col md:flex-row mx-auto gap-x-8">
+	<div class="pixelbox {"b"+($border + 1)} w-full list-none justify-between flex flex-col md:flex-row mx-auto gap-x-8">
 		<div class="flex md:order-2 w-full md:w-auto justify-between">
 			<NavHamburger on:click={toggle} />
 			<button on:mouseenter={makeHover} on:mouseleave={makeNormal} on:focus={makeHover} on:mousedown={makeFocus} on:click={makeFocus}
@@ -78,8 +79,31 @@
 
 <style>
 	.pixelbox {
-		border-image: url('/border_site1.png') 36 fill;
-		border-width: 15px;
+		border-width: 20px;
+	}
+
+	.b1 {
+		border-image: url('/border_navbar1.png') 36 fill;
+	}
+
+	.b2 {
+		border-image: url('/border_navbar2.png') 36 fill;
+	}
+
+	.b3 {
+		border-image: url('/border_navbar3.png') 36 fill;
+	}
+
+	.b4 {
+		border-image: url('/border_navbar4.png') 36 fill;
+	}
+
+	.b5 {
+		border-image: url('/border_navbar5.png') 36 fill round;
+	}
+
+	.b6 {
+		border-image: url('/border_navbar6.png') 36 fill;
 	}
 	.pixelbutton {
 		border-width: 15px;
