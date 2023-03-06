@@ -29,7 +29,7 @@
 	<link rel="preload" as="image" href="{base}/border_button_hover.png">
 </svelte:head>
 
-<div class="app display flex bg-game bg-top
+<div class="app display flex bg-game bg-top overflow-clip
 	bg-cover bg-fixed items-center flex-col text-myblack"> <!-- Base -->
 	<div class="flex flex-col items-center
 		md:!w-[768px] xl:!w-[1024px]"> <!--Column-->

@@ -1670,6 +1670,9 @@ input[type="range"].range-lg::-moz-range-thumb {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-clip {
+  overflow: clip;
+}
 .overflow-x-auto {
   overflow-x: auto;
 }
