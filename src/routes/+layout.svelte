@@ -13,6 +13,20 @@
 
 <svelte:head>
 	<link rel="icon" href="{base}/favicon.png" />
+	<link rel="preload" as="image" href="{base}/ad_site1.png">
+	<link rel="preload" as="image" href="{base}/ad_site2.png">
+	<link rel="preload" as="image" href="{base}/ad_site3.png">
+	<link rel="preload" as="image" href="{base}/ad_site4.png">
+	<link rel="preload" as="image" href="{base}/ad_site5.png">
+	<link rel="preload" as="image" href="{base}/ad_site6.png">
+	<link rel="preload" as="image" href="{base}/border_navbar1.png">
+	<link rel="preload" as="image" href="{base}/border_navbar2.png">
+	<link rel="preload" as="image" href="{base}/border_navbar3.png">
+	<link rel="preload" as="image" href="{base}/border_navbar4.png">
+	<link rel="preload" as="image" href="{base}/border_navbar5.png">
+	<link rel="preload" as="image" href="{base}/border_navbar6.png">
+	<link rel="preload" as="image" href="{base}/border_button_focus.png">
+	<link rel="preload" as="image" href="{base}/border_button_hover.png">
 </svelte:head>
 
 <div class="app display flex bg-game bg-top

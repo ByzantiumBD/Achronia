@@ -16,14 +16,6 @@
 	function makeHover() { buttonStatus = status.hover }
 	function makeFocus() { buttonStatus = status.focus; setTimeout(makeNormal, 300) }
 	function makeNormal() { buttonStatus = status.normal }
-
-	onMount(async () => {
-		makeHover();
-		setTimeout(()=>{
-			buttonStatus = status.focus; 
-			setTimeout(makeNormal, 1);
-		}, 1)
-	});
 </script>
 
 <div class="m-auto">
