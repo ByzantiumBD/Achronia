@@ -1,6 +1,7 @@
 <script lang="ts">
     import { base } from '$app/paths'
 	import title from "$lib/img/achronia_logo.png"
+	import gem from "$lib/img/favicon.png"
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
 	import { onMount } from 'svelte';
@@ -27,10 +28,15 @@
 
 <div class="m-auto">
 	<img
-		class="py-3 !w-[200px] sm:!w-[300px] md:!w-[500px] xl:!w-[650px] !max-w-none"
+		class="py-3 !w-[200px] hidden sm:block sm:!w-[500px] md:!w-[500px] xl:!w-[650px] !max-w-none"
 		src={title}
 		alt="Achronia Logo"
 	/>
+	<img
+		class="py-3 !w-[120px] sm:hidden"
+		src={gem}
+		alt="Achronia Logo"
+	>
 </div>
 
 <Navbar class="p-5 bg-transparent mb-3" navClass="!bg-transparent px-2 sm:px-4 py-2.5 w-full" let:hidden let:toggle>
