@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const dev = process.argv.includes('dev');
@@ -23,9 +23,6 @@ const config = {
 			precompress: true,
 			strict: true
 		}),
-		paths: {
-			base: dev? '' : '/Achronia'
-		}		
 	}
 };
 
