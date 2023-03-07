@@ -1,13 +1,3 @@
-@import '@fontsource/fira-mono';
-
-
-@font-face {
-    font-family: 'Pixel';
-    font-style: normal;
-    font-weight: 500;
-    src: url('/PubPix.ttf');
-}
-
 :root {
 	font-family: Pixel;
 }
