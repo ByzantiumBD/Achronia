@@ -1,7 +1,7 @@
 <script lang="ts">
     import { base } from '$app/paths'
 	import title from "$lib/img/achronia_logo.png"
-	import gem from "$lib/img/favicon.png"
+	import gem from "$lib/img/achronia_logo_phone.png"
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
 	import { onMount } from 'svelte';
@@ -25,7 +25,7 @@
 		alt="Achronia Logo"
 	/>
 	<img
-		class="py-3 !w-[120px] sm:hidden"
+		class="py-3 !w-[270px] sm:hidden"
 		src={gem}
 		alt="Achronia Logo"
 	>
