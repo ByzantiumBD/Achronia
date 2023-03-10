@@ -5,6 +5,7 @@
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import './styles.css';
+	import MapCanvas from '$lib/assets/MapCanvas.svelte';
 
 	function changeBorder() {
 		border.update(n => (n+1)%6)
@@ -29,8 +30,9 @@
 	<link rel="preload" as="image" href="{base}/border_button_hover.png">
 </svelte:head>
 
-<div class="app display flex bg-game bg-top overflow-clip
-	bg-cover bg-fixed items-center flex-col text-myblack"> <!-- Base -->
+<div class="app display flex overflow-clip
+	items-center flex-col text-myblack"> <!-- Base -->
+	<MapCanvas />
 	<div class="flex flex-col items-center
 		md:!w-[768px] xl:!w-[1024px]"> <!--Column-->
 		<Header />
