@@ -16,7 +16,7 @@
 			with retro style and an open-world map. It has a 
 			single player mode, where you'll face challenges and
 			tame Achronians, and a multiplayer one, where you'll
-			play agains other explorers to see who's the best!
+			play against other explorers to see who's the best!
 		</p>
 		<div class="text-center text-lg mt-10 mb-20 text-pink-2">Are you ready to start your adventure?</div>
 
