@@ -4,7 +4,6 @@
 	import gem from "$lib/img/achronia_logo_phone.png"
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
-	import { onMount } from 'svelte';
 	import { border } from './stores';
 
 	enum status {

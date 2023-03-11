@@ -12,3 +12,19 @@ export type TileSize = {
     end?: coord,
     blocking?: number[]
 }
+
+export type Frameset = {
+    still: {
+        down: coord[],
+        up: coord[],
+        right: coord[],
+        left: coord[]
+    },
+    walk: {
+        down: coord[][],
+        up: coord[][],
+        right: coord[][],
+        left: coord[][]
+    },
+    pic: HTMLImageElement
+}
