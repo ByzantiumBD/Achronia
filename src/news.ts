@@ -16,8 +16,8 @@ export default [
         title: "Are you ready to see a sample of our monsters?",
         short: "We're going to slowly release some monster sprites, to show "+
         "what the style will be, and releasing some of the lore behind at the"+
-        "same time. Check our socials on every Saturday and Wednesday to see "+
-        "them!"
+        " same time. Check our socials on every Saturday and Wednesday to see"+
+        " them!"
     },
     {
         pic: launch,
@@ -25,6 +25,6 @@ export default [
         short: "We're working on Achronia, a monster-catching pixel game!\n"+
         "As of now, the development is at a very early stage. We have some "+
         "assets, all the game mechanics, and all the Achronians ready, but "+
-        "the actual game will tak a while. Stay tuned and join the community!"
+        "the actual game will take a while. Stay tuned and join the community!"
     }
 ]
