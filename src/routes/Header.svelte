@@ -36,7 +36,7 @@
 			<NavHamburger on:click={toggle} />
 			<button on:mouseenter={makeHover} on:mouseleave={makeNormal} on:focus={makeHover} on:mousedown={makeFocus} on:click={makeFocus}
 				class="pixelbutton {buttonStatus} mr-4 px-3">
-				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="{base}/404">
+				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="{base}/play">
 					Play!
 				</Button>
 			</button>

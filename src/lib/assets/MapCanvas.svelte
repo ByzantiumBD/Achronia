@@ -21,8 +21,10 @@
         if (canvas) canvas.width = width
     }
 
-    function loop(tstamp: number) {
-        game.drawMap(tstamp)
+    function loop(tstamp: number) {   
+        if (window.getComputedStyle(canvas, null).display==="block") {
+            game.drawMap(tstamp)
+        }
         window.requestAnimationFrame(loop)
     }
 
@@ -47,7 +49,7 @@
 
 <svelte:window on:keydown={game.handleKeydown} on:keyup={game.handleKeyup}/>
 <div class="bg-game bg-center bg-cover" style="left:{-Math.round(currTileWidth)}px;" bind:clientHeight={height} bind:clientWidth={width}>
-    <canvas bind:this={canvas} {width} {height}></canvas>
+    <canvas class="hidden md:block" bind:this={canvas} {width} {height}></canvas>
 </div>
 
 

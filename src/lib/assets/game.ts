@@ -241,8 +241,7 @@ export function drawMap(
         personCoords = personCoords
             .map(splitCoords)
             .flat()//split into whole tiles, flatten and remove out of world tiles
-            .filter(c => (c[0]>0 && c[0]<currMap[0].length)&&(c[1]>=0 && c[1]<currMap.length-1))
-        console.log(personCoords);
+            .filter(c => (c[0]>0 && c[0]<currMap[0].length)&&(c[1]>=0 && c[1]<currMap.length-1));
         
         personCoords = Object.values(
             personCoords.reduce(
@@ -275,8 +274,6 @@ export function drawMap(
                             getWhich(c, startOfObject, size)
                         )
                     }
-                } else {
-                    console.log("UNEXPECTED ERR: tileHere is null");
                 }
             }
             

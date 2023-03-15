@@ -39,7 +39,7 @@
 		<div 
 			class="flex flex-col items-center md:!w-[768px]
 				xl:!w-[1024px] pt-5 bodybox {"b"+($border+1)}"> <!--White space-->
-			<main class="min-h-[75vh]">
+			<main class="main-h-[75vh]">
 				<slot />
 				<div class="flex justify-center pt-10">
 					<img on:click={changeBorder} src="{base}/favicon.png" alt="Achronia Logo" class="px-10 mb-3 max-w-none h-none !w-36">
