@@ -4,7 +4,6 @@
 	import gem from "$lib/img/achronia_logo_phone.png"
 	import { Navbar, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
 	import pointer from "$lib/Carousel/arrow-right.png"
-	import { onMount } from 'svelte';
 	import { border } from './stores';
 
 	enum status {
@@ -37,7 +36,7 @@
 			<NavHamburger on:click={toggle} />
 			<button on:mouseenter={makeHover} on:mouseleave={makeNormal} on:focus={makeHover} on:mousedown={makeFocus} on:click={makeFocus}
 				class="pixelbutton {buttonStatus} mr-4 px-3">
-				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="{base}/404">
+				<Button btnClass="text-center text-orange-1 text-lg inline-flex items-center justify-center" href="{base}/play">
 					Play!
 				</Button>
 			</button>
